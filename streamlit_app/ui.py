@@ -1,8 +1,10 @@
 import streamlit as st
-import pandas as pd
 import sys
 import os
+
+# Fix path so Streamlit can find app/
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from app.predict import predict_potability
 
 st.title("💧 Water Potability Prediction App")
